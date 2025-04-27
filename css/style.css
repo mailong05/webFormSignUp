@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    box-sizing: border-box;
+}
+
+.modal-title {
+    position: absolute;
+    left: 27%;
+    top: 2%;
+    translate: middle;
+}
+
+section {
+    text-align: center;
+}
+
+.error {
+    color: red;
+    display: block;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+            <img class="w-100" src="../img/banner2.PNG" alt="banner">
+        </header>
+        <div class="content">
+            <nav>
+                <ul class="nav">
+                    <li><a class="nav-link" href="#">Đăng nhập</a></li>
+                    <li><a class="nav-link" data-bs-toggle="modal" data-bs-target="#modalId" href="#">Đăng kí</a></li>
+                </ul>
+            </nav>
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitleId">
+                                THÔNG TIN CÁ NHÂN
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <form id="formInfor" action="">
+                                    <label for="name" class="form-label">
+                                        Họ tên
+                                    </label>
+                                    <input type="text" name="name" id="name" class="form-control"
+                                        placeholder="Nhập họ và tên">
+                                    <span class="error" id="error-name"></span>
+
+                                    <label for="cmnd" class="form-label">CMND cũ</label>
+                                    <input type="text" name="cmnd" id="cmnd" class="form-control"
+                                        placeholder="Nhập số CMND">
+                                    <span class="error" id="error-cmnd"></span>
+
+                                    <label for="province" class="form-label">Quê quán</label>
+                                    <input type="text" name="province" id="province" class="form-control"
+                                        placeholder="Nhập tỉnh">
+                                    <span class="error" id="error-province"></span>
+
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" name="email" id="email" class="form-control"
+                                        placeholder="Nhập email">
+                                    <span class="error" id="error-email"></span>
+
+                                    <label for="phone" class="form-label">Số điện thoại</label>
+                                    <input type="tel" name="phone" id="phone" class="form-control"
+                                        placeholder="Nhập số điện thoại">
+                                    <span class="error" id="error-phone"></span>
+
+                                    <label for="avatar" class="form-label">Ảnh đại diện</label>
+                                    <input type="file" name="avatar" id="avatar" class="form-control">
+
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="btnSave" class="btn btn-success w-100">Lưu</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section>
+                <h1>DANH SÁCH ĐĂNG KÝ LÀM CĂN CƯỚC SINH VIÊN TRƯỜNG DHCN THÀNH PHỐ HỒ CHÍ MINH</h1>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Họ tên</th>
+                            <th>CMND cũ</th>
+                            <th>Quê quán</th>
+                            <th>Email</th>
+                            <th>Điện thoại</th>
+                            <th>Ảnh đại diện</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
