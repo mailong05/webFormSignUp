@@ -4,7 +4,7 @@ const reMap = {
     cmnd: /^\d{9}$/,
     province: /^([A-Z]+)(\s[A-Z]+)*$/,
     email: /^[\w.-]+@iuh\.edu\.vn$/,
-    phone: /^0\d{2}-\d{3}-\d{4}$/
+    phone: /^0[1-9]{2}-\d{3}-\d{4}$/
 };
 
 const message = {
